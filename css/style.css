@@ -1,0 +1,91 @@
+body {
+    background-color: #ffffff;
+    width: 100%;
+    font-family: "open sans", helvetica, georgia; 
+    font-size: 12px;
+}
+
+/*Editing the header*/
+
+header {
+    padding: 1em 2em;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+img {
+    display: inline-block;
+    float: left;
+}
+
+header ul  {
+    margin-left: 4em;
+    float: right;
+}
+
+
+header ul li {
+    display: inline;
+    margin-left: 1.5em;
+    font-family: "open sans"; 
+    float: left; 
+    font-size: 1.3em;
+}
+
+header ul li a {
+    color: #838994;
+    text-decoration: none;
+}
+
+header ul li:first-child {
+    display: block;
+    font-weight: 600;
+}
+
+/*Main Section*/
+
+section.intro {
+    background-image: url('../images/first-background.jpg');
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+section h1, p {
+    color: white; 
+    font-family: raleway;
+    font-weight: 100;
+}
+
+section h1 {
+    font-size: 3em;
+}
+
+section p {
+    font-size: 2em;
+    margin-top: -0.5em;
+}
+
+.main-copy {
+    padding-top: 10em;
+}
+
+section.middle {
+    background-color: aliceblue; 
+    border: 1px solid black; 
+}
+
+footer {
+    background-color: chocolate;
+    border: 1px solid black; 
+}
+
+
+
+
+/*header ul {
+    margin: 0;
+    padding: 0;
+}*/
+
