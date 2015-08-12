@@ -1,87 +1,161 @@
+html {
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased; 
+    box-sizing: border-box; 
+    *, *:before, *:after {
+        box-sizing: inherit; 
+    }
+}
+
 body {
     background-color: #ffffff;
-    width: 100%;
-    font-family: "open sans", helvetica, georgia; 
-    font-size: 12px;
+    font-family: "Roboto", helvetica, georgia; 
+    letter-spacing: 0.03rem;
 }
 
 /*Editing the header*/
 
-header {
-    padding: 1em 2em;
-    display: inline-block;
-    width: 90%;
-    margin: 0 auto; 
+.top-navigation {
+    width: 100%;
+    position: fixed; 
+    background: #ffffff;
 }
 
-img {
-    display: inline-block;
-    float: left;
+.top-navigation > .header {
+    height: 4.375rem; 
+    width: 65rem;
+    margin: 0 auto;
+    padding-top: 2em;
 }
 
-header ul  {
-    margin-left: 4em;
+.links  {
     float: right;
 }
 
-
-header ul li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     margin-left: 1.5em;
-    font-family: "open sans"; 
     float: left; 
     font-size: 1.3em;
 }
 
-header ul li a {
+nav ul li a {
     color: #838994;
     text-decoration: none;
+    
 }
 
-header ul li:first-child {
-    display: block;
-    font-weight: 600;
+nav a:hover {
+    color: #383838;
+    text-decoration: none;
+    
+}
+
+nav ul li:first-child {
+    font-weight: 500;
 }
 
 /*Main Section*/
 
 section.intro {
     background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
     background-size: cover;
-    height: 500px;
+    background-repeat: no-repeat;
+    height: 50rem;
+    overflow: auto;
+}
+
+.main-copy {
     text-align: center;
 }
 
-section h1, p {
+section h1, section p {
     color: white; 
-    font-family: raleway;
     font-weight: 100;
-}
-
-section h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 section p {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: -0.5em;
 }
 
 .main-copy {
-    padding-top: 10em;
+    padding-top: 20rem;
 }
 
-section.middle {
-    background-color: aliceblue; 
-    border: 1px solid black; 
+button {
+    margin-top: 2rem; 
+    padding: 1rem 4rem;
+    color: white; 
+    border: 1px solid #f15a29; 
+    border-radius: 4px; 
+    background-color: #f15a29; 
+    font-size: 1.3em;
 }
 
-footer {
-    background-color: chocolate;
-    border: 1px solid black; 
+button:hover {
+    margin-top: 2rem; 
+    padding: 1rem 4rem;
+    color: white; 
+    border: 1px solid #db4412; 
+    border-radius: 4px; 
+    background-color: #db4412; 
+    font-size: 1.3em;
 }
 
+/*Middle Sectrion*/
 
+section.middle { 
+    text-align: center;
+    padding-top: 4em 0;
+
+}
+
+ section h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.middle > .benefits {
+    list-style: none;
+    display: inline-block;
+}
+
+.benefits li {
+    float: left;
+    padding: 0 2rem;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+hr {
+    width: 80%;
+    border-color: rgba(0, 0, 0, 0.1); 
+}
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.5em;
+    color: gray;
+}
+
+.footer h6 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #555555;
+    font-weight: 100;
+}
 
 
 /*header ul {

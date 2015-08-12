@@ -5,15 +5,16 @@
 	<title>Startup Landing Page Clone</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
 
 <!-- Link to the Karma Clone: http://thinkful-ed.github.io/karma-clone/ -->
 
 </head>
 <body>
     
-<header>
-        <img class="logo" src="images/karma-logo.svg" alt="Logo Image" width="26px">
-        <ul>
+<nav class="top-navigation">
+    <div class="header">
+        <ul class="links">
             <li><a href="#">Meet Karma</a></li>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Store</a></li>
@@ -21,7 +22,9 @@
             <li><a href="#">Help</a></li>
             <li><a href="#">Login</a></li>
         </ul>
-</header>
+        <img class="logo" src="images/karma-logo.svg" alt="Logo Image" width="26px">
+    </div>
+</nav>
 
 <section class="intro">
     <div class="main-copy">
@@ -32,14 +35,35 @@
 </section>
     
 <section class="middle">
-    <h2>Everyone needs a little Karma</h1>
-    <h3>Internet for all devices</h3>
-    <h3>Boost your productivity</h3>
-    <h3>Pay as You Go</h3>
+    <h2>Everyone needs a little Karma</h2>
+    
+    <ul class="benefits">
+        <li>
+            <img src="images/icon-devices.svg" height="127px" width="127px" alt="Internet for All Devices">
+            <div class="caption">
+                <h3>Internet for all devices</h3>
+            </div>
+        </li>
+        
+        <li>
+            <img src="images/icon-coffee.svg" height="127px" width="127px" alt="Boost Your Productivity">
+            <div class="caption">
+                <h3>Boost your productivity</h3>
+            </div>
+        </li>
+        
+        <li>
+            <img src="images/icon-coffee.svg" height="127px" width="127px" alt="Pay as You Go">
+            <div class="caption">
+                <h3>Pay as You Go</h3>
+            </div>
+        </li>
+        
+    </ul>
 </section>
     
     
-<footer>    
+<nav class="footer">    
     <hr>
     <p>Join us on</p>
         <ul class="icons">
@@ -48,7 +72,7 @@
             <li class="instagram"><i class="fa fa-instagram"></i></li>
         </ul>
     <h6>Karma Mobility, Inc.</h6>
-</footer>
+</nav>
 	
 </body>
 </html>
