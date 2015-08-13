@@ -19,6 +19,8 @@ body {
     width: 100%;
     position: fixed; 
     background: #ffffff;
+    z-index: 9999; /*    high z-index value insures this element stays on top of all other elements*/
+
 }
 
 .top-navigation > .header {
@@ -142,6 +144,55 @@ hr {
 
 .footer {
     text-align: center;
+}
+
+.icons {
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*
+.twitter, .facebook, .instagram {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 3em;
+}
+*/
+
+.icons > li {
+    border-radius: 100%;
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    margin: 0.5rem 5px;
+    border: 1px solid #eaebec;
+    padding: .5rem 0 .5rem 0;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0.5em 0; 
+}
+
+.twitter {
+    color: #55acee; 
+}
+
+.facebook {
+    color: #4c66a4; 
+}
+
+.instagram {
+    color: #3f729b; 
 }
 
 .footer p {
